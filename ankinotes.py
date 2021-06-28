@@ -48,11 +48,18 @@ def main(notes_dir):
 
 
 def findCard(text):
-    match = re.search(r"^Q:\s(.*?)\nA:\s(.*?)$", text)
+    regex = re.compile(r"^Q:\s(.*?)\nA:\s(.*?)$", re.DOTALL)
+    match = regex.search(text)
     if match:
         question = match.group(1)
         answer   = match.group(2)
         return(question, answer)
+        
+
+def convertNewlines(text):
+    '''Replace plaintext \n newlines with anki-compatible <br>. '''
+    return text.replace('\n', '<br>')
+
 
 
 
@@ -86,12 +93,13 @@ def importAnki(cards_dict):
     # 3. Create the cards
     for question, answer in cards_dict.items(): 
         note = col.newNote()
-        note.fields[0] = question
-        note.fields[1] = answer
+        note.fields[0] = convertNewlines(question)
+        note.fields[1] = convertNewlines(answer)
         col.addNote(note)
 
     # 4. Save changes
     col.save()
+    pass
   
     
 
