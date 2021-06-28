@@ -24,7 +24,7 @@ Cancer/lymphoma
 Drugs (penicillins, sulphonamides, COCP)  
 Pregnancy  
 
-Two sided prompts are single discrete paragraphs with an empty line above and below. The front of the card must begin on a newline with 'Q:', while the back of the card starts on a newline beginning with 'A:'. 
+Two sided prompts are single discrete paragraphs with an empty line above and below. The front of the card must begin on a newline with 'Q: ', while the back of the card starts on a newline beginning with 'A: '. 
 
 
 ## Use
