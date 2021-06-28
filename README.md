@@ -15,13 +15,13 @@ Currently only the default two-sided prompt is supported.
 
 ### Default two-sided prompts
 
-Q: What conditions may cause erythema nodosum?
-A: Infection (TB, streptococci)
-Sarcoidosis
-IBD
-Behcet's
-Cancer/lymphoma
-Drugs (penicillins, sulphonamides, COCP)
-Pregnancy
+Q: What conditions may cause erythema nodosum?  
+A: Infection (TB, streptococci)  
+Sarcoidosis  
+IBD  
+Behcet's  
+Cancer/lymphoma  
+Drugs (penicillins, sulphonamides, COCP)  
+Pregnancy  
 
 Two sided prompts are single discrete paragraphs with an empty line above and below. The front of the card must begin on a newline with 'Q:', while the back of the card starts on a newline beginning with 'A:'. 
