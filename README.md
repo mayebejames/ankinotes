@@ -6,6 +6,9 @@ Ankinotes.py crawls a directory of ```.md``` files looking for text formatted fo
 New cards are added to a JSON file (mine is here as an example) which is checked to ensure old cards are not duplicated. Moving notes between files does not alter this.
 Currently changes to the 'front' of a card are interpreted as a new card which will be added again to the Anki deck, while changes to the 'back' of a card are not synchronised with Anki. 
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. It is strongly recommended that you backup your Anki decks each time before using this programme. 
+This software is released free of charge under the MIT license (see LICENSE.txt). 
+
 ## Syntax
 
 Currently only the default two-sided prompt is supported. 
