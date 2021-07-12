@@ -27,7 +27,7 @@ Pregnancy
 Two sided prompts are single discrete paragraphs with an empty line above and below. The front of the card must begin on a newline with 'Q: ', while the back of the card starts on a newline beginning with 'A: '. 
 
 
-## Use
+## Usage
 
 The anki collection directory is hardcoded. Open the ```ankinotes.py``` file in a text editor and change the anki_home variable. Then go to the ankinotes directory in the terminal and run the following:
 
